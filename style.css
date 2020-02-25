@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  background-color: #cc9933;
+}
+
+body header {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 1vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+body header ul {
+  margin: 1vw;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+body header ul a {
+  color: #cc9933;
+  text-decoration: none;
+}
+
+body header ul a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: .3vw;
+  background-color: #cc9933;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body header ul a:hover {
+  color: #993300;
+}
+
+body header ul a:hover::after {
+  width: 100%;
+  background-color: #993300;
+}
+
+body main {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+  background-color: #fff;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main h1 {
+  color: #cc6633;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+body main h2 {
+  color: #993300;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+body main cite {
+  padding: 1vw;
+  color: #996633;
+}
+/*# sourceMappingURL=style.css.map */

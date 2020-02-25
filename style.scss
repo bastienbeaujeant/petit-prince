@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+$backgroundcolor: #cc9933;
+$maincolor: #fff;
+$titlecolor: #cc6633;
+$subtitlecolor: #993300;
+$quotecolor: #996633;
+$navcolor: #cc9933;
+$navcolorhover: #993300;
+
+body {
+font-family: 'Quicksand', sans-serif ;
+font-size: 1em;
+margin:0;
+  background-color: $backgroundcolor;
+  header {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 1vw;
+    background-color: $maincolor;
+    padding: 1vw;
+    ul {
+      margin:1vw;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      a{
+          color: $navcolor;
+          text-decoration: none;
+          &::after{
+            content: "";
+            display: block;
+            width: 0%;
+            height: .3vw;
+            background-color: $navcolor;
+            transition: .5s ease;
+          }
+          &:hover{
+              color: $navcolorhover;
+              
+          }
+          &:hover::after{
+            width: 100%;
+            background-color: $navcolorhover;
+          }
+      }
+    }
+  }
+  main {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    background-color: $maincolor;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: $titlecolor;
+        font-size: 1.75em ;
+        text-align: center;
+        
+    }
+    h2{
+        color: $subtitlecolor;
+        font-size: 1.25em;
+        text-align: center;
+    }
+    cite{
+      padding: 1vw ;
+      color: $quotecolor;
+    }
+  }
+}
